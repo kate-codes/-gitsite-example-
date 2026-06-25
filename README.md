@@ -44,7 +44,7 @@ Or in `gh` CLI you can use the following (without the asterisks):
 gh repo create **Your_New_Repository_Name** --public --source=. --push
 ```
 
-_Note: you can set this to --private as well and later make it public._
+_Note: you can set this to --private as well and later make it public. Additionally, if you forget to remove the asterisks you get a repository name like: -gitsite-example-_
 
 ### Step 2: Update Configuration
 1. Open `package.json` and update the `homepage` field:
