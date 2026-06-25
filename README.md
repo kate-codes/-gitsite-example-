@@ -97,6 +97,8 @@ It may take a minute or two to appear. If you see a 404 error, wait a bit and re
 - **package.json** - Dependencies and scripts
 - **vite.config.ts** - Vite build configuration
 
+See detailed project [project architecture](./PROJECT_STRUCTURE.md) for more technical resources.
+
 ## Customization
 
 Edit `src/App.tsx` to change the content and `src/App.css` to modify the appearance. After changes:
