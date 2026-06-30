@@ -2,6 +2,8 @@
 
 A simple hello world React app hosted on GitHub Pages. 
 
+See https://kate-codes.github.io/Gitsite-Example/ for example of what this looks like forked.
+
 
 With deployer GHA!* (*repo must be public for it to run free, and is not configured for this repo as it is an example.)
 
@@ -103,6 +105,24 @@ This command builds the React app and automatically pushes the build to GitHub P
 Your website will be live at: `https://username.github.io`
 
 It may take a minute or two to appear. If you see a 404 error, wait a bit and refresh.
+
+### (Optional) Step 6: Modify and Manage
+
+#### For the GHA to work you may need to modify 
+
+- For each of the following you can refer to the branch `example-branch` https://github.com/kate-codes/Gitsite-Example/tree/example-branch to review how I set it up for my own example site for this repo at: https://kate-codes.github.io/Gitsite-Example/
+- Your configuration for `homepage` placeholder may need to be updated — package.json will error out at https://username.github.io instead of your actual URL https://github.com/{your-username}/{repo-name}/github.io
+- Your configuration for `base` in `vite.config.ts` may need modification — since this is a project repo (gitsite-example), not a username.github.io repo, assets will 404 with base: '/'. It needs the repo name as the subpath.
+
+#### You may need to enable GitHub Pages in the repo settings
+Goto --> https://github.com/{your-username}/Gitsite-Example/settings/pages
+
+Set Source → "Deploy from a branch" → Branch: gh-pages → folder: / (root) → Save.
+
+Then re-run npm run deploy to rebuild with the correct base path and push fresh content to gh-pages.
+
+After that, the site should appear at https://{your-username}.github.io/Gitsite-Example/ within a minute or two. 
+
 
 ## Project Structure
 
